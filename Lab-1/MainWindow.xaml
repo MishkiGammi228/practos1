@@ -1,0 +1,31 @@
+﻿<Window x:Class="Lab_1.MainWindow"
+        ResizeMode="CanMinimize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Нахождение минимального значения" Height="394" Width="544" Background="#FF24B035" >
+    <Window.Resources>
+        <Color x:Key="SolidColorBrushColor1">#FF126619</Color>
+        <Color x:Key="SolidColorBrushColor2">#FF126619</Color>
+    </Window.Resources>
+
+    <Grid Height="372" VerticalAlignment="Top">
+        <Grid.Background>
+            <SolidColorBrush Color="#FF2DB638"/>
+        </Grid.Background>
+        <Menu HorizontalAlignment="Center" Height="37" VerticalAlignment="Top" Width="544" Background="#FF28800D">
+            <MenuItem Header="О программе" Height="37" Width="94" Click="О_программе_Click"/>
+            <MenuItem Header="Выход" Width="57" Click="Выход_Click"  />
+        </Menu>
+        <TextBox x:Name="count" HorizontalAlignment="Left" Margin="31,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF84D37F"/>
+        <TextBox x:Name="otvet" IsReadOnly="True" HorizontalAlignment="Left" Height="28" Margin="354,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Background="#FF84D37F"/>
+        <TextBox x:Name="otvet2" IsReadOnly="True" HorizontalAlignment="Left" Height="127" Margin="31,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Background="#FF84D37F"/>
+        <Button Content="Вычислить" HorizontalAlignment="Left" Margin="186,142,0,0" VerticalAlignment="Top" Width="75" Click="Вычислить_Click" Background="#FF28800D"/>
+        <TextBlock HorizontalAlignment="Left" Margin="31,123,0,0" TextWrapping="Wrap" Text="Количество элементов" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="31,176,0,0" TextWrapping="Wrap" Text="Сгенерированные числа" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="354,176,0,0" TextWrapping="Wrap" Text="Минимальное значение" VerticalAlignment="Top"/>
+    </Grid>
+
+</Window>
